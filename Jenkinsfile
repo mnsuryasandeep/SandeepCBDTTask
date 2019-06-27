@@ -7,7 +7,7 @@ git 'https://github.com/mnsuryasandeep/SandeepCBDTTask.git'
 stage('Compile'){
 sh "${mvnHome}/bin/mvn compile"
 }
-stage('Build'){
-sh "${mvnHome}/bin/mvn build"
+stage('Package'){
+sh "${mvnHome}/bin/mvn package"
 }
 }
